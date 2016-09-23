@@ -17,4 +17,12 @@ module "my_static_site" {
 	domain = "example.com"
 }
 ```
+
+Already have existing S3 buckest? No problem, import them with:
+
+```
+terraform import module.<name>.aws_s3_bucket.public <domain>
+terraform import module.<name>.aws_s3_bucket.redirect www.<domain>
+```
+
 [Static site]: #static-site
