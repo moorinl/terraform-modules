@@ -35,7 +35,7 @@ module "my_static_site" {
 	source = "github.com/moorinteractive/terraform-modules//static_site"
 	domain = "example.com"
 }
-```my_redirect
+```
 
 Already have existing S3 buckets? No problem, import them with:
 
